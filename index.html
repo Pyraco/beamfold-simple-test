@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#f6f6f7">
+<meta name="theme-color" content="#242634">
 <title>Beamfold: a daily light puzzle</title>
 <link rel="icon" type="image/svg+xml" href="./favicon.svg">
 <script>
@@ -12,12 +12,12 @@
   (function () {
     var t = null;
     try { t = (JSON.parse(localStorage.getItem('beamfold.simple.v3') || '{}')).theme; } catch (e) { /* private mode */ }
-    if (t !== 'light' && t !== 'dark') t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    if (t !== 'light' && t !== 'dark') t = 'dark'; // dark unless the player has chosen light with the appearance button
     document.documentElement.dataset.theme = t;
   })();
 </script>
-  <script type="module" crossorigin src="./assets/index-BMvU80az.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-Cs-F8vAO.css">
+  <script type="module" crossorigin src="./assets/index-CqaRYnVI.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DERIAPob.css">
   <meta name="description" content="One new light-bending puzzle every day. Turn the mirrors and send the light through every crystal in as few moves as you can. Free, no ads, no sign-up.">
   <link rel="canonical" href="https://pyraco.github.io/beamfold-simple-test/">
   <link rel="manifest" href="./manifest.webmanifest">
